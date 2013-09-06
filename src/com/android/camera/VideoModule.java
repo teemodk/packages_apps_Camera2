@@ -1586,7 +1586,16 @@ public class VideoModule implements CameraModule,
                 CameraProfile.QUALITY_HIGH);
         mParameters.setJpegQuality(jpegQuality);
 
+        // Color effect
+        String colorEffect = mPreferences.getString(
+                CameraSettings.KEY_COLOR_EFFECT,
+                mActivity.getString(R.string.pref_camera_coloreffect_default));
+        if (isSupported(colorEffect, mParameters.getSupportedColorEffects())) {
+            mParameters.setColorEffect(colorEffect);
+        }
+
         mCameraDevice.setParameters(mParameters);
+
         // Keep preview size up to date.
         mParameters = mCameraDevice.getParameters();
 
