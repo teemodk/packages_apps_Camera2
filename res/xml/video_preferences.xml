@@ -37,6 +37,12 @@
             camera:title="@string/pref_coloreffect_title"
             camera:entries="@array/pref_coloreffect_entries"
             camera:entryValues="@array/pref_coloreffect_entryvalues" />
+    <ListPreference
+            camera:key="pref_video_jpeg_key"
+            camera:defaultValue="@string/pref_jpeg_default"
+            camera:title="@string/pref_jpeg_title"
+            camera:entries="@array/pref_jpeg_entries"
+            camera:entryValues="@array/pref_jpeg_entryvalues" />
     <IconListPreference
             camera:key="pref_video_time_lapse_frame_interval_key"
             camera:defaultValue="@string/pref_video_time_lapse_frame_interval_default"

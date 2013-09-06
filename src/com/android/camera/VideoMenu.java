@@ -202,6 +202,26 @@ public class VideoMenu extends PieController
             });
             settings.addItem(item);
         }
+        // Jpeg quality.
+        if (group.findPreference(CameraSettings.KEY_VIDEO_JPEG) != null) {
+            item = makeItem(R.drawable.ic_jpeg);
+            final ListPreference effectPref = group.findPreference(CameraSettings.KEY_VIDEO_JPEG);
+            item.setLabel(res.getString(R.string.pref_jpeg_title).toUpperCase(locale));
+            item.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(PieItem item) {
+                    ListPrefSettingPopup popup =
+                        (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
+                        R.layout.list_pref_setting_popup, null, false);
+                    popup.initialize(effectPref);
+                    popup.setSettingChangedListener(VideoMenu.this);
+                    mUI.dismissPopup();
+                    mPopup = popup;
+                    mUI.showPopup(mPopup);
+                }
+            });
+            settings.addItem(item);
+        }
     }
 
     @Override
