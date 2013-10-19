@@ -168,6 +168,9 @@ public class CameraUtil {
     // Samsung ZSL mode
     private static boolean sEnableZSL;
 
+    // Continuous focus mode needs autoFocusCall
+    private static boolean sContinuousFocusNeedsAutoFocusCall;
+
     private CameraUtil() {
     }
 
@@ -184,6 +187,8 @@ public class CameraUtil {
         sEnableZSL = context.getResources().getBoolean(R.bool.enableZSL);
         sNoFaceDetectOnFrontCamera =
                 context.getResources().getBoolean(R.bool.noFaceDetectOnFrontCamera);
+        sContinuousFocusNeedsAutoFocusCall =
+            context.getResources().getBoolean(R.bool.continuousFocusNeedsAutoFocusCall);
     }
 
     public static int dpToPixel(int dp) {
@@ -204,6 +209,10 @@ public class CameraUtil {
 
     public static boolean noFaceDetectOnFrontCamera() {
         return sNoFaceDetectOnFrontCamera;
+    }
+
+    public static boolean isContinuousFocusNeedsAutoFocusCall() {
+        return sContinuousFocusNeedsAutoFocusCall;
     }
 
     // Rotates the bitmap by the specified degree.

@@ -32,4 +32,6 @@
     <bool name="noFaceDetectOnFrontCamera">false</bool>
     <!-- Use ZSL mode for Qualcomm cameras -->
     <bool name="enableZSL">false</bool>
+    <!-- Calls a continues focus mode needed by most devices -->
+    <bool name="continuousFocusNeedsAutoFocusCall">true</bool>
 </resources>

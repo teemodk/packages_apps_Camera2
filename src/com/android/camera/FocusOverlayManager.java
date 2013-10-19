@@ -578,9 +578,13 @@ public class FocusOverlayManager {
 
     private boolean needAutoFocusCall() {
         String focusMode = getFocusMode();
+        boolean continuousFocus =
+            CameraUtil.isContinuousFocusNeedsAutoFocusCall()
+            && focusMode.equals(Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
+
         return !(focusMode.equals(Parameters.FOCUS_MODE_INFINITY)
-                || focusMode.equals(Parameters.FOCUS_MODE_FIXED)
-                || focusMode.equals(Parameters.FOCUS_MODE_EDOF)
-                || focusMode.equals(Parameters.FOCUS_MODE_CONTINUOUS_PICTURE));
+            || focusMode.equals(Parameters.FOCUS_MODE_FIXED)
+            || focusMode.equals(Parameters.FOCUS_MODE_EDOF)
+            || continuousFocus);
     }
 }
