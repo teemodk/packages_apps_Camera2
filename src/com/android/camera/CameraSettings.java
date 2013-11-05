@@ -69,7 +69,8 @@ public class CameraSettings {
     public static final String KEY_SMART_CAPTURE_PHOTO = "pref_smart_capture_camera";
     public static final String KEY_SMART_CAPTURE_VIDEO = "pref_smart_capture_video";
     public static final String KEY_JPEG = "pref_camera_jpeg_key";
-    public static final String KEY_COLOR_EFFECT = "pref_camera_coloreffect_key";
+    public static final String KEY_CAMERA_COLOR_EFFECT = "pref_camera_coloreffect_key";
+    public static final String KEY_VIDEO_COLOR_EFFECT = "pref_video_coloreffect_key";
 
     public static final String EXPOSURE_DEFAULT_VALUE = "0";
 
@@ -177,7 +178,8 @@ public class CameraSettings {
         ListPreference videoEffect = group.findPreference(KEY_VIDEO_EFFECT);
         ListPreference cameraHdr = group.findPreference(KEY_CAMERA_HDR);
         ListPreference cameraHdrPlus = group.findPreference(KEY_CAMERA_HDR_PLUS);
-        ListPreference colorEffect = group.findPreference(KEY_COLOR_EFFECT);
+        ListPreference colorEffectCamera = group.findPreference(KEY_CAMERA_COLOR_EFFECT);
+        ListPreference colorEffectVideo = group.findPreference(KEY_VIDEO_COLOR_EFFECT);
 
         // Since the screen could be loaded from different resources, we need
         // to check if the preference is available here
@@ -228,9 +230,13 @@ public class CameraSettings {
                 || !CameraUtil.isCameraHdrSupported(mParameters))) {
             removePreference(group, cameraHdr.getKey());
         }
-        if (colorEffect != null) {
+        if (colorEffectCamera != null) {
             filterUnsupportedOptions(group,
-                    colorEffect, mParameters.getSupportedColorEffects());
+                    colorEffectCamera, mParameters.getSupportedColorEffects());
+        }
+        if (colorEffectVideo != null) {
+            filterUnsupportedOptions(group,
+                    colorEffectVideo, mParameters.getSupportedColorEffects());
         }
 
         int frontCameraId = CameraHolder.instance().getFrontCameraId();
