@@ -1594,6 +1594,9 @@ public class VideoModule implements CameraModule,
             mParameters.setColorEffect(colorEffect);
         }
 
+        // Set video size before recording starts
+        CameraSettings.setEarlyVideoSize(mParameters, mProfile);
+
         mCameraDevice.setParameters(mParameters);
 
         // Keep preview size up to date.
