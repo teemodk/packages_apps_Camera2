@@ -96,6 +96,7 @@ public class VideoUI implements PieRenderer.PieListener,
     private View mPreviewThumb;
     private View mFlashOverlay;
 
+    private View mPreviewCover;
     private SurfaceView mSurfaceView = null;
     private int mPreviewWidth = 0;
     private int mPreviewHeight = 0;
@@ -136,6 +137,10 @@ public class VideoUI implements PieRenderer.PieListener,
             }
         }
     };
+
+    public void showPreviewCover() {
+        mPreviewCover.setVisibility(View.VISIBLE);
+    }
 
     private class SettingsPopup extends PopupWindow {
         public SettingsPopup(View popup) {
@@ -178,6 +183,7 @@ public class VideoUI implements PieRenderer.PieListener,
         mController = controller;
         mRootView = parent;
         mActivity.getLayoutInflater().inflate(R.layout.video_module, (ViewGroup) mRootView, true);
+        mPreviewCover = mRootView.findViewById(R.id.preview_cover);
         mTextureView = (TextureView) mRootView.findViewById(R.id.preview_content);
         mTextureView.setSurfaceTextureListener(this);
         mTextureView.addOnLayoutChangeListener(mLayoutListener);
@@ -579,6 +585,8 @@ public class VideoUI implements PieRenderer.PieListener,
     @Override
     public void onPieOpened(int centerX, int centerY) {
         setSwipingEnabled(false);
+        // Close module selection menu when pie menu is opened.
+        mSwitcher.closePopup();
     }
 
     @Override
@@ -774,6 +782,10 @@ public class VideoUI implements PieRenderer.PieListener,
 
     @Override
     public void onSurfaceTextureUpdated(SurfaceTexture surface) {
+        // Make sure preview cover is hidden if preview data is available.
+        if (mPreviewCover.getVisibility() != View.GONE) {
+            mPreviewCover.setVisibility(View.GONE);
+        }
     }
 
     // SurfaceHolder callbacks
