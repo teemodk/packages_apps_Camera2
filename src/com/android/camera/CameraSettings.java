@@ -68,6 +68,7 @@ public class CameraSettings {
     public static final String KEY_STARTUP_MODULE_INDEX = "camera.startup_module";
     public static final String KEY_SMART_CAPTURE_PHOTO = "pref_smart_capture_camera";
     public static final String KEY_SMART_CAPTURE_VIDEO = "pref_smart_capture_video";
+    public static final String KEY_TRUE_VIEW = "pref_true_view_camera";
     public static final String KEY_CAMERA_JPEG = "pref_camera_jpeg_key";
     public static final String KEY_VIDEO_JPEG = "pref_video_jpeg_key";
     public static final String KEY_CAMERA_COLOR_EFFECT = "pref_camera_coloreffect_key";
