@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- The label for Smart capture. -->
-    <string name="pref_smart_capture_label">Smart capture</string>
+    <string name="pref_smart_capture_label">SMART CAPTURE</string>
     <string name="pref_smart_capture_title">Smart capture</string>
     <string name="pref_smart_capture_default">@string/setting_off_value</string>
 
