@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 SlimRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The label for Smart capture. -->
+    <string name="pref_smart_capture_label">УМНАЯ СЪЕМКА</string>
+    <string name="pref_smart_capture_title">Умная съемка</string>
+    <string name="pref_smart_capture_default">@string/setting_off_value</string>
+
+    <!-- The label for TrueView -->
+    <string name="pref_true_view_label">TRUEVIEW</string>
+
+    <!-- Settings screen, Select Color effect title -->
+    <string name="pref_coloreffect_title">Цветовой эффект</string>
+
+    <!-- Settings screen, Color effect dialog radio button choices -->
+    <string name="pref_coloreffect_entry_none">Нет</string>
+    <string name="pref_coloreffect_entry_mono">Ч/Б</string>
+    <string name="pref_coloreffect_entry_sepia">Сепия</string>
+    <string name="pref_coloreffect_entry_negative">Негатив</string>
+    <string name="pref_coloreffect_entry_solarize">Соляризация</string>
+    <string name="pref_coloreffect_entry_posterize">Постеризация</string>
+    <string name="pref_coloreffect_entry_aqua">Под водой</string>
+    <string name="pref_coloreffect_entry_emboss">Рельеф</string>
+    <string name="pref_coloreffect_entry_sketch">Рисунок</string>
+    <string name="pref_coloreffect_entry_neon">Неон</string>
+    <string name="pref_coloreffect_entry_pastel">Пастель</string>
+    <string name="pref_coloreffect_entry_mosaic">Мозаика</string>
+    <string name="pref_coloreffect_entry_redtint">Красный оттенок</string>
+    <string name="pref_coloreffect_entry_bluetint">Синий оттенок</string>
+    <string name="pref_coloreffect_entry_greentint">Зелёный оттенок</string>
+
+    <!-- Settings screen, JPEG Quality -->
+    <string name="pref_jpeg_title">Качество JPEG</string>
+
+    <!-- Settings screen, JPEG dialog radio button choices -->
+    <string name="pref_jpeg_entry_super">Лучшее</string>
+    <string name="pref_jpeg_entry_high">Высокое</string>
+    <string name="pref_jpeg_entry_medium">Среднее</string>
+    <string name="pref_jpeg_entry_low">Низкое</string>
+
+    <!-- Settings screen, dialog choice for 20.7 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_20_7mp">20.7 Мпикс</string>
+    <!-- Settings screen, dialog choice for 18.7 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_18_7mp">18.7 Мпикс</string>
+    <!-- Settings screen, dialog choice for 13.1 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_13_1mp">13.1 Мпикс</string>
+    <!-- Settings screen, dialog choice for 12.8 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_12_8mp">12.8 Мпикс</string>
+    <!-- Settings screen, dialog choice for 12.7 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_12_7mp">12.7 Мпикс</string>
+    <!-- Settings screen, dialog choice for 12 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_12mp">12 Мпикс</string>
+    <!-- Settings screen, dialog choice for 11.5 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_11_5mp">11.5 Мпикс</string>
+    <!-- Settings screen, dialog choice for 10.4 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_10_4mp">10.4 Мпикс</string>
+    <!-- Settings screen, dialog choice for 8.6 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_8_6mp_wide">8.6 Мпикс (16:9)</string>
+    <!-- Settings screen, dialog choice for 8.3 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_8_3mp_wide">8.3 Мпикс (16:9)</string>
+    <!-- Settings screen, dialog choice for 7.7 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_7_7mp">7.7 Мпикс</string>
+    <!-- Settings screen, dialog choice for 6.4 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_6_4mp_wide">6.4 Мпикс (16:9)</string>
+    <!-- Settings screen, dialog choice for 6 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_6mp">6 Мпикс</string>
+    <!-- Settings screen, dialog choice for 4.5 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_4_5mp">4.5 Мпикс</string>
+    <!-- Settings screen, dialog choice for 4.1 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_4_1mp_wide">4.1 Мпикс (16:9)</string>
+    <!-- Settings screen, dialog choice for 3.7 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_3_7mp_wide">3.7 Мпикс (16:9)</string>
+    <!-- Settings screen, dialog choice for 2.5 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_2_5mp_wide">2.5 Мпикс (16:9)</string>
+    <!-- Settings screen, dialog choice for 2.1 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_2_1mp_wide">2.1 Мпикс (16:9)</string>
+    <!-- Settings screen, dialog choice for 1.9 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_1_9mp">1.9 Мпикс</string>
+    <!-- Settings screen, dialog choice for 1.5 megapixels picture size [CHAR LIMIT=15] -->
+    <string name="pref_camera_picturesize_entry_1_5mp_wide">1.5 Мпикс (16:9)</string>
+
+</resources>

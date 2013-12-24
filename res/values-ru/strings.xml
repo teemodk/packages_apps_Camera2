@@ -292,4 +292,5 @@
     <string name="cannot_load_image" msgid="4100136187076585580">"Не удалось загрузить изображение"</string>
     <string name="switch_photo_filmstrip" msgid="1448511001008888767">"Лента"</string>
     <string name="setting_wallpaper" msgid="2397759659347872725">"Установка обоев…"</string>
+    <string name="select_image">Выбрать изображение</string>
 </resources>
